@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FMF",
+        "FFF"
+    ],
+    "key": {
+        "F": {
+            "item": "atr:flour"
+        },
+        "M": {
+            "item": "minecraft:milk_bucket"
+        }
+    },
+    "result": {
+        "item": "atr:ice_shard",
+        "count": 1
+    },
+    "group": "stuff"
+}

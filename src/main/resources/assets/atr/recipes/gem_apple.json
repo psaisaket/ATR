@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "CCC",
+        "CAC",
+        "CCC"
+    ],
+    "key": {
+        "C": {
+            "item": "atr:crystal_block"
+        },
+        "A": {
+            "item": "minecraft:apple"
+        }
+    },
+    "result": {
+        "item": "atr:gem_apple",
+        "count": 1
+    },
+    "group": "stuff"
+}

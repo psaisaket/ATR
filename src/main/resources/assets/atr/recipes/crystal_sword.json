@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "C",
+        "C",
+        "S"
+    ],
+    "key": {
+        "C": {
+            "item": "atr:crystal_gem"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "atr:crystal_sword",
+        "count": 1
+    },
+    "group": "stuff"
+}

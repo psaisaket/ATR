@@ -1,7 +1,8 @@
 package com.burntrouter.atr;
 
-import com.burntrouter.atr.blocks.ATRBlocks;
-import com.burntrouter.atr.items.ATRItems;
+import com.burntrouter.atr.registry.ATRBlocks;
+import com.burntrouter.atr.registry.ATRFluids;
+import com.burntrouter.atr.registry.ATRItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
@@ -13,12 +14,14 @@ public class ATR implements ModInitializer {
 
 	public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
 			new Identifier(modid, "main"),
-			() -> new ItemStack(ATRItems.testItem));
+			() -> new ItemStack(ATRItems.SCARLET));
 
 	@Override
 	public void onInitialize() {
 		ATRItems.registerItems();
-		ATRBlocks.registerBlocks();
+		ATRBlocks.init();
+		ATRFluids.init();
+
 	}
 
 }

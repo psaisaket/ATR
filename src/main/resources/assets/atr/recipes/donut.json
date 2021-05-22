@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " F ",
+        "FWF",
+        " F "
+    ],
+    "key": {
+        "F": {
+            "item": "atr:flour"
+        },
+        "W": {
+            "item": "minecraft:water_bucket"
+        }
+    },
+    "result": {
+        "item": "atr:enchiridion_item",
+        "count": 1
+    },
+    "group": "stuff"
+}

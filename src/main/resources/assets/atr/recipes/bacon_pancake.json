@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "atr:bacon"
+        },
+        {
+            "item": "atr:pancake"
+        }
+    ],
+    "result": {
+        "item": "atr:bacon_pancake",
+        "count": 1
+    },
+    "group": "stuff"
+}

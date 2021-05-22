@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"up": "atr:block/candy_grass_top",
+		"north": "atr:block/candy_grass_side",
+		"south": "atr:block/candy_grass_side",
+		"east": "atr:block/candy_grass_side",
+		"west": "atr:block/candy_grass_side",
+		"down": "atr:block/candy_dirt",
+		"particle": "atr:block/candy_dirt"
+	}
+}
