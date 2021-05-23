@@ -2,7 +2,6 @@ package com.burntrouter.atr.registry;
 
 import com.burntrouter.atr.ATR;
 import com.burntrouter.atr.blocks.ATRFluidBlock;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -15,7 +14,7 @@ import net.minecraft.util.registry.Registry;
 import java.util.function.Function;
 
 public class ATRBlocks {
-    public static final String modid = ATR.modid;
+    public static final String modid = ATR.modId;
 
     public static final Block BANANA_YELLOW = register("banana_yellow", new Block(FabricBlockSettings.copy(Blocks.YELLOW_GLAZED_TERRACOTTA)));
     public static final Block BERRY_BLUE = register("berry_blue", new Block(FabricBlockSettings.copy(Blocks.BLUE_GLAZED_TERRACOTTA)));
@@ -50,7 +49,7 @@ public class ATRBlocks {
     }
 
     static <T extends Block> T register(String name, T block) {
-        return register(name, block, new Item.Settings().group(ATR.ITEM_GROUP));
+        return register(name, block, new Item.Settings().group(ATR.atrGroup));
     }
 
     static <T extends Block> T register(String name, T block, Function<T, BlockItem> itemFactory) {

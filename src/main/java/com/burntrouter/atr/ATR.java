@@ -9,19 +9,31 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
-public class ATR implements ModInitializer {
-	public static final String modid = "atr";
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-	public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
-			new Identifier(modid, "main"),
+public class ATR implements ModInitializer {
+	public static final String modId = "atr";
+	public static final String modName = "Adventure Time Reborn";
+
+	public static final Logger LOGGER = LogManager.getLogger(modName);
+
+	public static final ItemGroup atrGroup = FabricItemGroupBuilder.build(
+			new Identifier(modId, "main"),
 			() -> new ItemStack(ATRItems.SCARLET));
 
 	@Override
 	public void onInitialize() {
+		log(Level.INFO, "Adventure Time Reborn starting up!");
 		ATRItems.registerItems();
 		ATRBlocks.init();
 		ATRFluids.init();
+		ATRClient.init();
+	}
 
+	public static void log(Level level, String message) {
+		//LOGGER.log(level, message);
 	}
 
 }
