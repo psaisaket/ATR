@@ -1,7 +1,8 @@
 package com.burntrouter.atr;
 
+import com.burntrouter.atr.client.render.ATEntityRenderer;
 import com.burntrouter.atr.registry.ATRFluids;
-import com.burntrouter.atr.render.ATFluidRender;
+import com.burntrouter.atr.client.render.ATFluidRender;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -19,5 +20,6 @@ public class ATRClient implements ClientModInitializer {
     public void onInitializeClient() {
         ATFluidRender.setupFluidRendering(ATRFluids.JUICE_STILL, ATRFluids.JUICE_FLOWING,  new Identifier("atr", "juice"));
         ATFluidRender.markTranslucent(ATRFluids.JUICE_STILL, ATRFluids.JUICE_FLOWING);
+        ATEntityRenderer.init();
     }
 }

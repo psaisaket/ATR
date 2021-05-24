@@ -1,4 +1,4 @@
-package com.burntrouter.atr.blocks;
+package com.burntrouter.atr.block;
 
 import net.minecraft.block.FluidBlock;
 import net.minecraft.fluid.FlowableFluid;

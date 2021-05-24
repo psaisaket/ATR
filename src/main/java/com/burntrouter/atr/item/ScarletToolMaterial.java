@@ -1,4 +1,4 @@
-package com.burntrouter.atr.items;
+package com.burntrouter.atr.item;
 
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;

@@ -1,7 +1,7 @@
 package com.burntrouter.atr.registry;
 
 import com.burntrouter.atr.ATR;
-import com.burntrouter.atr.items.ScarletToolMaterial;
+import com.burntrouter.atr.item.ScarletToolMaterial;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;

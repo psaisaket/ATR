@@ -1,6 +1,8 @@
 package com.burntrouter.atr;
 
+import com.burntrouter.atr.entity.ATREntityTypes;
 import com.burntrouter.atr.registry.ATRBlocks;
+import com.burntrouter.atr.registry.ATREntities;
 import com.burntrouter.atr.registry.ATRFluids;
 import com.burntrouter.atr.registry.ATRItems;
 import net.fabricmc.api.ModInitializer;
@@ -33,6 +35,8 @@ public class ATR implements ModInitializer {
 		ATRItems.registerItems();
 		ATRBlocks.init();
 		ATRFluids.init();
+		ATREntities.init();
+		ATREntityTypes.init();
 		ATRClient.init();
 	}
 

@@ -1,7 +1,6 @@
 package com.burntrouter.atr.registry;
 
 import com.burntrouter.atr.ATR;
-import com.burntrouter.atr.blocks.ATRFluidBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
