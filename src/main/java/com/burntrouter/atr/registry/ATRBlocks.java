@@ -31,7 +31,7 @@ public class ATRBlocks {
     public static final Block CRYSTAL_ORE = register("crystal_ore", new Block(FabricBlockSettings.copy(Blocks.LAPIS_ORE)));
     public static final Block FROSTED_CANDY = register("frosted_candy", new Block(FabricBlockSettings.copy(Blocks.STONE)));
     public static final Block GRAPE_PURPLE = register("grape_purple", new Block(FabricBlockSettings.copy(Blocks.PURPLE_GLAZED_TERRACOTTA)));
-    public static final Block JUICE = register("juice", new ATRFluidBlock(ATRFluids.JUICE_STILL, FabricBlockSettings.copy(Blocks.WATER)), (BlockItem) null);
+    public static final Block JUICE = register("juice", new FluidBlock(ATRFluids.JUICE_STILL, FabricBlockSettings.copy(Blocks.WATER)){});
     public static final Block WATERMELON_PINK = register("watermelon_pink", new Block(FabricBlockSettings.copy(Blocks.PINK_GLAZED_TERRACOTTA)));
 
     public static void init() {

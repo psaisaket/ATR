@@ -9,6 +9,10 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
+import net.minecraft.util.registry.Registry;
+import net.minecraft.world.biome.BuiltinBiomes;
+import net.minecraft.world.gen.feature.LakeFeature;
+import net.minecraft.world.gen.feature.SingleStateFeatureConfig;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
