@@ -12,7 +12,7 @@ group = project.maven_group
 
 repositories {
 	maven {
-		url = 'https://raw.githubusercontent.com/Devan-Kerman/Devan-Repo/master/'
+		url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
 	}
 }
 
@@ -25,7 +25,8 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation group: 'net.devtech', name: 'arrp', version: '0.3.11'
+	//GeckoLib for animations
+	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.16.5:3.0.36:dev'
 }
 
 processResources {

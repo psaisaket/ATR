@@ -18,10 +18,10 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
-public class FinnEntity extends PathAwareEntity {
+public class JakeEntity extends PathAwareEntity {
 
-    public static final TrackedData<Byte> FINN = DataTracker.registerData(FinnEntity.class, TrackedDataHandlerRegistry.BYTE);
-    public FinnEntity(World world) {
+    public static final TrackedData<Byte> JAKE = DataTracker.registerData(JakeEntity.class, TrackedDataHandlerRegistry.BYTE);
+    public JakeEntity(World world) {
         super(ATREntityTypes.FINN, world);
     }
 
@@ -41,7 +41,7 @@ public class FinnEntity extends PathAwareEntity {
     @Override
     protected void initDataTracker() {
         super.initDataTracker();
-        this.dataTracker.startTracking(FINN, (byte) 0);
+        this.dataTracker.startTracking(JAKE, (byte) 0);
     }
 
     @Override
