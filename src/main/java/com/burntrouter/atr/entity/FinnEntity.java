@@ -1,5 +1,6 @@
 package com.burntrouter.atr.entity;
 
+import com.burntrouter.atr.registry.ATREntities;
 import com.burntrouter.atr.registry.ATRItems;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -22,11 +23,11 @@ public class FinnEntity extends PathAwareEntity {
 
     public static final TrackedData<Byte> FINN = DataTracker.registerData(FinnEntity.class, TrackedDataHandlerRegistry.BYTE);
     public FinnEntity(World world) {
-        super(ATREntityTypes.FINN, world);
+        super(ATREntities.FINN, world);
     }
 
     public static DefaultAttributeContainer.Builder initAttributes() {
-        return ATREntityTypes.getDefaultAttributes()
+        return ATREntities.getDefaultAttributes()
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25D)
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 5.0D);
     }

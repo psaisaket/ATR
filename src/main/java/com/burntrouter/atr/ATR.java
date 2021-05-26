@@ -1,20 +1,12 @@
 package com.burntrouter.atr;
 
-import com.burntrouter.atr.entity.ATREntityTypes;
-import com.burntrouter.atr.registry.ATRBlocks;
-import com.burntrouter.atr.registry.ATREntities;
-import com.burntrouter.atr.registry.ATRFluids;
-import com.burntrouter.atr.registry.ATRItems;
+import com.burntrouter.atr.registry.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
-import net.minecraft.util.registry.Registry;
-import net.minecraft.world.biome.BuiltinBiomes;
-import net.minecraft.world.gen.feature.LakeFeature;
-import net.minecraft.world.gen.feature.SingleStateFeatureConfig;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -36,7 +28,6 @@ public class ATR implements ModInitializer {
 		ATRBlocks.init();
 		ATRFluids.init();
 		ATREntities.init();
-		ATREntityTypes.init();
 		ATRClient.init();
 	}
 

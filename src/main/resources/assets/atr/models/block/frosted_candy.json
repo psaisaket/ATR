@@ -1,6 +1,12 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-      "all": "atr:block/frosted_candy"
-    }
-  }
+{   
+	"parent": "block/cube",
+	"textures": {
+		"up": "atr:block/frosted_candy_top",
+		"north": "atr:block/frosted_candy",
+		"south": "atr:block/frosted_candy",
+		"east": "atr:block/frosted_candy",
+		"west": "atr:block/frosted_candy",
+		"down": "atr:block/frosted_candy_bottom",
+		"particle": "atr:block/frosted_candy_top"
+	}
+}
