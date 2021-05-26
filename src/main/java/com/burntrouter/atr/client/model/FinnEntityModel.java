@@ -28,20 +28,20 @@ public class FinnEntityModel extends EntityModel<FinnEntity> {
 		body.setTextureOffset(16, 16).addCuboid(-4.0F, -24.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.0F, false);
 
 		rightleg = new ModelPart(this);
-		rightleg.setPivot(0.0F, 24.0F, 0.0F);
-		rightleg.setTextureOffset(0, 16).addCuboid(-4.0F, -12.0F, -1.0F, 2.0F, 12.0F, 2.0F, 0.0F, false);
+		rightleg.setPivot(-3.0F, 12.0F, 0.0F);
+		rightleg.setTextureOffset(0, 16).addCuboid(-1.0F, 0.0F, -1.0F, 2.0F, 12.0F, 2.0F, 0.0F, false);
 
 		leftleg = new ModelPart(this);
-		leftleg.setPivot(0.0F, 24.0F, 0.0F);
-		leftleg.setTextureOffset(0, 16).addCuboid(2.0F, -12.0F, -1.0F, 2.0F, 12.0F, 2.0F, 0.0F, false);
+		leftleg.setPivot(3.0F, 12.0F, 0.0F);
+		leftleg.setTextureOffset(0, 16).addCuboid(-1.0F, 0.0F, -1.0F, 2.0F, 12.0F, 2.0F, 0.0F, false);
 
 		rightarm = new ModelPart(this);
-		rightarm.setPivot(0.0F, 24.0F, 0.0F);
-		rightarm.setTextureOffset(40, 16).addCuboid(-6.0F, -24.0F, -1.0F, 2.0F, 12.0F, 2.0F, 0.0F, false);
+		rightarm.setPivot(-5.0F, 1.0F, 0.0F);
+		rightarm.setTextureOffset(40, 16).addCuboid(-1.0F, -1.0F, -1.0F, 2.0F, 12.0F, 2.0F, 0.0F, false);
 
 		leftarm = new ModelPart(this);
-		leftarm.setPivot(0.0F, 24.0F, 0.0F);
-		leftarm.setTextureOffset(40, 16).addCuboid(4.0F, -24.0F, -1.0F, 2.0F, 12.0F, 2.0F, 0.0F, false);
+		leftarm.setPivot(5.0F, 1.0F, 0.0F);
+		leftarm.setTextureOffset(40, 16).addCuboid(-1.0F, -1.0F, -1.0F, 2.0F, 12.0F, 2.0F, 0.0F, false);
 
 		backpack = new ModelPart(this);
 		backpack.setPivot(0.0F, 24.0F, 0.0F);
@@ -49,9 +49,9 @@ public class FinnEntityModel extends EntityModel<FinnEntity> {
 	}
 
 	@Override
-	public void setAngles(FinnEntity entity, float limbAngle, float limbDistance, float animationProgress, float headYaw, float headPitch) {
-	rightleg.pitch = MathHelper.cos(limbAngle * 0.6662F) * 1.0F * limbDistance;
-	leftleg.pitch = MathHelper.cos(limbAngle * 0.6662F + (float) Math.PI) * 1.0F * limbDistance;
+	public void setAngles(FinnEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
+		rightleg.pitch = MathHelper.cos(limbSwing * 0.6662F) * 1.0F * limbSwingAmount;
+		leftleg.pitch = MathHelper.cos(limbSwing * 0.6662F + (float) Math.PI) * 1.0F * limbSwingAmount;
 	}
 
 	@Override
@@ -64,6 +64,7 @@ public class FinnEntityModel extends EntityModel<FinnEntity> {
 		leftarm.render(matrixStack, buffer, packedLight, packedOverlay);
 		backpack.render(matrixStack, buffer, packedLight, packedOverlay);
 	}
+
 	public void setRotationAngle(ModelPart bone, float x, float y, float z) {
 		bone.pitch = x;
 		bone.yaw = y;

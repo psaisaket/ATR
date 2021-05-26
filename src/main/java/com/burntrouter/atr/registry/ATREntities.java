@@ -21,7 +21,7 @@ public class ATREntities {
     }
 
     public static void init() {
-        FabricDefaultAttributeRegistry.register(FINN, FinnEntity.createMobAttributes());
+        FabricDefaultAttributeRegistry.register(FINN, FinnEntity.initAttributes());
         FabricDefaultAttributeRegistry.register(JAKE, JakeEntity.createMobAttributes());
     }
 
